@@ -1,0 +1,3 @@
+[submodule "3rdParty/svpng"]
+	path = 3rdParty/svpng
+	url = https://github.com/miloyip/svpng.git
