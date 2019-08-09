@@ -39,7 +39,10 @@ Implement basic ray tracing following ["Ray Tracing in One Weekend"](https://git
 
 ![Chapter5](images/ch5.png)
 
-
 ### Chapter6
 
 ![Chapter6](images/ch6.png)
+
+### Chapter7
+
+![Chapter7](images/ch7.png)
