@@ -7,7 +7,7 @@ Implement basic ray tracing following ["Ray Tracing in One Weekend"](https://git
 - [x] Chapter1: Output an image
 - [x] Chapter2: The vec3 class
 - [x] Chapter3: : Rays, a simple camera, and background
-- [ ] Chapter4: Adding a sphere
+- [x] Chapter4: Adding a sphere
 - [ ] Chapter5: Surface normals and multiple objects
 - [ ] Chapter6: Antialiasing
 - [ ] Chapter7: Diffuse Materials
