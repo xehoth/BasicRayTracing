@@ -48,4 +48,5 @@ int main() {
             paint(rgba.data(), x, y, x * 256 / WIDTH, y * 256 / HEIGHT, 128,
                   (x * 256 / WIDTH + y * 256 / HEIGHT) / 2);
     svpng(f, WIDTH, HEIGHT, rgba.data(), 1);
+    fclose(f);
 }
