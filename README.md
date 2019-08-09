@@ -30,3 +30,7 @@ Implement basic ray tracing following ["Ray Tracing in One Weekend"](https://git
 ![Chapter3 Y](images/ch3-Y-axis-linear-blue.png)
 
 ![Chapter3 Z](images/ch3-Z-axis-linear-blue.png)
+
+### Chapter4
+
+![Chapter4](images/ch4.png)
