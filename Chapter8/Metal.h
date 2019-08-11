@@ -26,17 +26,20 @@
 #ifndef _BASIC_RAY_TRACING_METAL_H_
 #define _BASIC_RAY_TRACING_METAL_H_
 #include "Material.h"
+#include "Random.h"
+
 Vector3f reflect(const Vector3f &v, const Vector3f &n) { return v - 2 * dot(v, n) * n; }
 
 struct Metal : Material {
     Vector3f albedo;
+    float fuzz;
 
-    Metal(const Vector3f &albedo) : albedo(albedo) {}
+    Metal(const Vector3f &albedo, float fuzz = 0) : albedo(albedo), fuzz(fuzz) {}
 
     bool scatter(const Ray &rayIn, const CollideRecord &rec, Vector3f &attenuation,
                  Ray &scattered) const override {
         Vector3f reflected = reflect(rayIn.getDir(), rec.normal);
-        scattered = {rec.p, reflected};
+        scattered = {rec.p, reflected + fuzz * getRandomUnitVector3f()};
         attenuation = albedo;
         return dot(scattered.getDir(), rec.normal) > 0;
     }

@@ -27,6 +27,15 @@
 #define _BASIC_RAY_TRACING_RANDOM_H_
 #include <random>
 #include <functional>
+#include "../Chapter2/Vector.h"
 
 auto genFloat = std::bind(std::uniform_real_distribution<float>(), std::mt19937());
+
+Vector3f getRandomUnitVector3f() {
+    Vector3f p;
+    do {
+        p = 2.0f * Vector3f(genFloat(), genFloat(), genFloat()) - Vector3f(1, 1, 1);
+    } while (p.length2() >= 1.0);
+    return p;
+}
 #endif

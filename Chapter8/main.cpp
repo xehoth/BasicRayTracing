@@ -75,8 +75,8 @@ int main() {
     Material *mats[4];
     mats[0] = new Lambertian({0.8, 0.3, 0.3});
     mats[1] = new Lambertian({0.8, 0.8, 0.0});
-    mats[2] = new Metal({0.8, 0.6, 0.2});
-    mats[3] = new Metal({0.8, 0.8, 0.8});
+    mats[2] = new Metal({0.8, 0.6, 0.2}, 0.3);
+    mats[3] = new Metal({0.8, 0.8, 0.8}, 0.3);
 
     obj[0] = new Sphere({0, 0, -1}, 0.5, mats[0]);
     obj[1] = new Sphere({0, -100.5, -1}, 100, mats[1]);

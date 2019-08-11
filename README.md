@@ -50,3 +50,4 @@ Implement basic ray tracing following ["Ray Tracing in One Weekend"](https://git
 ### Chapter8
 
 ![Chapter8](images/ch8.png)
+![Chapter8 fuzz0.3](images/ch8-fuzz.png)

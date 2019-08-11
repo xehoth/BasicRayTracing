@@ -28,14 +28,6 @@
 #include "Material.h"
 #include "Random.h"
 
-Vector3f getRandomUnit() {
-    Vector3f p;
-    do {
-        p = 2.0f * Vector3f(genFloat(), genFloat(), genFloat()) - Vector3f(1, 1, 1);
-    } while (p.length2() >= 1.0);
-    return p;
-}
-
 struct Lambertian : Material {
     Vector3f albedo;
 
@@ -43,7 +35,7 @@ struct Lambertian : Material {
 
     bool scatter(const Ray &rayIn, const CollideRecord &rec, Vector3f &attenuation,
                  Ray &scattered) const override {
-        scattered = {rec.p, rec.normal + getRandomUnit()};
+        scattered = {rec.p, rec.normal + getRandomUnitVector3f()};
         attenuation = albedo;
         return true;
     }
