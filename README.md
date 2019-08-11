@@ -10,8 +10,8 @@ Implement basic ray tracing following ["Ray Tracing in One Weekend"](https://git
 - [x] Chapter4: Adding a sphere
 - [x] Chapter5: Surface normals and multiple objects
 - [x] Chapter6: Antialiasing
-- [ ] Chapter7: Diffuse Materials
-- [ ] Chapter8: Metal
+- [x] Chapter7: Diffuse Materials
+- [x] Chapter8: Metal
 - [ ] Chapter9: Dielectrics
 - [ ] Chapter10: Positionable camera
 - [ ] Chapter11: Defocus Blur
@@ -46,3 +46,7 @@ Implement basic ray tracing following ["Ray Tracing in One Weekend"](https://git
 ### Chapter7
 
 ![Chapter7](images/ch7.png)
+
+### Chapter8
+
+![Chapter8](images/ch8.png)
