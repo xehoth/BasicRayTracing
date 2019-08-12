@@ -28,7 +28,7 @@
 #include "Material.h"
 #include "Random.h"
 
-Vector3f reflect(const Vector3f &v, const Vector3f &n) { return v - 2 * dot(v, n) * n; }
+Vector3f reflect(const Vector3f &v, const Vector3f &n) { return v + 2 * n; }
 
 struct Metal : Material {
     Vector3f albedo;
